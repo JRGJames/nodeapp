@@ -1,3 +1,6 @@
+*.odp#
+*.odt#
+.env
 # Logs
 logs
 *.log

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/tsc -w",
+    "start": "./node_modules/.bin/nodemon ./dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,10 +17,19 @@
     "url": "https://github.com/JRGJames/nodeapp/issues"
   },
   "homepage": "https://github.com/JRGJames/nodeapp#readme",
-  "description": "",
   "devDependencies": {
-    "@types/node": "^20.10.7",
+    "@types/node": "^20.10.8",
     "nodemon": "^3.0.2",
     "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "Node",
+    "MongoDB",
+    "appWeb",
+    "DWES"
+  ],
+  "description": "",
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
